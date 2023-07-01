@@ -50,7 +50,7 @@
     <div id="subscription-overlay">
         <div style="max-width: 400px; margin: 0 auto; padding: 20px; background-color: #f1f1f1; border-radius: 5px; text-align: center;">
             <h2>Login</h2>
-            <form id="login-form">
+            <form id="login-form" method="POST" action="/login">
                 <input type="text" placeholder="Email" style="width: 100%; padding: 12px; margin: 8px 0; box-sizing: border-box;" required>
                 <input type="password" placeholder="Phone No." style="width: 100%; padding: 12px; margin: 8px 0; box-sizing: border-box;" required>
                 <input type="submit" value="Login" style="background-color: #4CAF50; color: white; cursor: pointer;">
@@ -100,7 +100,7 @@
         });
     </script>
 
-    <script src="script.js"></script>
+    <script src="backend.js"></script>
 </body>
 
 </html>
