@@ -30,11 +30,11 @@
 }
 
 .subscription-form {
-    width: 60%;
-    height:100%;
+    width: 30%;
+    height:auto;
     margin-top: 20%;
     margin-bottom: 20%;
-    padding: 15px 0px;
+    padding: 15px 15px;
     background-color: #f1f1f1;
     border-radius: 15px;
     text-align: center;
@@ -52,14 +52,14 @@
 }
 
 .subscription-form input[type="email"] {
-    width: 100%;
+    width: 60%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-.subscription-form input[type="number"] {
-    width: 100%;
+.subscription-form input[type="phone"] {
+    width: 60%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;

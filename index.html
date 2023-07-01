@@ -48,66 +48,53 @@
     </div>
 
     <div id="subscription-overlay">
-        <div style="max-width: 400px; margin: 0 auto; padding: 20px; background-color: #f1f1f1; border-radius: 5px; text-align: center;">
-            <h2>Login</h2>
-            <form id="login-form" method="POST" action="/login">
-                <input type="text" placeholder="Email" style="width: 100%; padding: 12px; margin: 8px 0; box-sizing: border-box;" required>
-                <input type="password" placeholder="Phone No." style="width: 100%; padding: 12px; margin: 8px 0; box-sizing: border-box;" required>
-                <input type="submit" value="Login" style="background-color: #4CAF50; color: white; cursor: pointer;">
+        <div class="subscription-form">
+            <h2>SignIn</h2>
+            <form id="myForm" action="home.html">
+                <label for="name">Name:</label>
+                <input type="phone" id="number" name="Phone" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <a href="home.html"><button type="submit" >Submit</button></a>
             </form>
-            <div style="margin-top: 16px;">
-                <p>Don't have an account? <a href="signup.html" onclick="toggleForm()" style="text-decoration: none; color: blue;">Sign up</a></p>
-            </div>
-        </div>
-        
-        <div style="display: none; max-width: 400px; margin: 0 auto; padding: 20px; background-color: #f1f1f1; border-radius: 5px; text-align: center;" id="signup-container">
-            <h2>Sign Up</h2>
-            <form id="signup-form">
-                <input type="text" placeholder="Username" style="width: 100%; padding: 12px; margin: 8px 0; box-sizing: border-box;" required>
-                <input type="password" placeholder="Password" style="width: 100%; padding: 12px; margin: 8px 0; box-sizing: border-box;" required>
-                <input type="submit" value="Sign Up" style="background-color: #4CAF50; color: white; cursor: pointer;">
-            </form>
-            <div style="margin-top: 16px;">
-                <p>Already have an account? <a href="#" onclick="toggleForm()" style="text-decoration: none; color: blue;">Login</a></p>
-            </div>
-        </div>
-        
         </div>
     </div>
-    
-    
-    <script>
-        function toggleForm() {
-            var loginForm = document.getElementById("login-form");
-            var signupContainer = document.getElementById("signup-container");
-    
-            loginForm.reset(); // Reset login form fields
-            loginForm.style.display = loginForm.style.display === "none" ? "block" : "none";
-            signupContainer.style.display = signupContainer.style.display === "none" ? "block" : "none";
-        }
-    
-        // Add event listeners for form submission
-        document.getElementById("login-form").addEventListener("submit", function (e) {
-            e.preventDefault();
-            // Add login functionality here
-            alert("Login submitted!");
-        });
-    
-        document.getElementById("signup-form").addEventListener("submit", function (e) {
-            e.preventDefault();
-            // Add signup functionality here
-            alert("Signup submitted!");
-        });
-    </script>
 
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent the form from submitting
+    
+          // Collect form data
+          const formData = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            phone: document.getElementById('phone').value
+            // Add more form fields as needed
+          };
+    
+          // Send form data to server-side script using AJAX
+          const xhr = new XMLHttpRequest();
+          xhr.open('POST', '/checkData'); // Replace with the URL of your server-side script
+          xhr.setRequestHeader('Content-Type', 'application/json');
+          xhr.onload = function() {
+            if (xhr.status === 200) {
+              const response = JSON.parse(xhr.responseText);
+              if (response.exists) {
+                alert('Email or phone number already exists in the database.');
+              } else {
+                alert('Email and phone number do not exist in the database.');
+              }
+            } else {
+              alert('An error occurred while processing the form data.');
+            }
+          };
+          xhr.send(JSON.stringify(formData));
+    
+          // Optional: Clear form fields
+          document.getElementById('myForm').reset();
+        });
+      </script>
     <script src="backend.js"></script>
 </body>
 
 </html>
-
-
-
-
-
-
-
