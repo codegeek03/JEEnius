@@ -206,8 +206,8 @@ body {
 .box
 {
     width:40%;
-    background: linear-gradient(to right, #e100ff, #c78ce3);
-    padding:20px 40px;
+    background:linear-gradient(to right, #f50384, #d188b7) ;
+    padding:20px 30px;
     margin-right:10%;
     border-radius: 20px;
     margin-bottom:5%;
@@ -216,5 +216,22 @@ body {
 
 }
 .box:hover{
-    background:linear-gradient(to right, #f50384, #d188b7) ;
+    background: linear-gradient(to right, #e100ff, #c78ce3);
+  
+}
+.box1
+{
+    width:40%;
+    background: linear-gradient(to right, #04b5fb, #a4d7eb);
+    padding:20px 30px;
+    margin-right:10%;
+    border-radius: 20px;
+    margin-bottom:5%;
+    align-items:center;
+    justify-content:left;
+
+
+}
+.box1:hover{
+    background:linear-gradient(to right, #0e37ed, #87a0eb) ;
 }
