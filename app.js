@@ -1,51 +1,44 @@
-// Node.js server-side code (using Express.js and MongoDB)
-
 const express = require('express');
 const app = express();
-const bodyParser = require('body-parser');
-const MongoClient = require('mongodb').MongoClient;
-const filePath = 'C:\\Users\\shami\\OneDrive\\Documents\\GitHub\\Jeenius\\';
-// Use double backslashes (\\) to escape backslashes in the file path
+const fs = require('fs');
+const path = require('path');
 
-// Rest of your code...
+// Define a route to handle form submissions
+app.post('/submit', (req, res) => {
+  const formData = req.body; // Assuming you are using body-parser or similar middleware to parse the request body
+  const dataPath = path.join(__dirname, 'data.json');
 
-
-app.use(bodyParser.json());
-
-// MongoDB connection URL
-const url = 'mongodb://localhost:27017';
-const dbName = 'mydatabase';
-
-app.post('/checkData', (req, res) => {
-  // Extract email and phone from the request body
-  const { email, phone } = req.body;
-
-  // Connect to MongoDB
-  MongoClient.connect(url, function(err, client) {
+  // Read existing data from the file
+  fs.readFile(dataPath, 'utf8', (err, data) => {
     if (err) {
-      console.error('Error connecting to MongoDB:', err);
-      res.status(500).json({ error: 'An error occurred while connecting to the database.' });
-      return;
+      console.error(err);
+      return res.status(500).send('Error reading data file');
     }
 
-    const db = client.db(dbName);
-    const collection = db.collection('users');
+    let existingData = [];
+    if (data) {
+      existingData = JSON.parse(data);
+    }
 
-    // Check if email or phone exists in the collection
-    collection.findOne({ $or: [{ email }, { phone }] }, (err, result) => {
+    // Add the new form data to the existing data
+    existingData.push(formData);
+
+    // Write the updated data back to the file
+    fs.writeFile(dataPath, JSON.stringify(existingData), 'utf8', (err) => {
       if (err) {
-        console.error('Error querying the database:', err);
-        res.status(500).json({ error: 'An error occurred while querying the database.' });
-      } else {
-        const exists = !!result; // Convert result to a boolean value
-        res.status(200).json({ exists });
+        console.error(err);
+        return res.status(500).send('Error writing data file');
       }
 
-      client.close();
+      res.status(200).send('Form data stored successfully');
     });
   });
 });
 
-app.listen(3000, () => {
+// Serve static files from the "public" directory
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Start the server
+app.listen(80, () => {
   console.log('Server is running on port 3000');
 });
