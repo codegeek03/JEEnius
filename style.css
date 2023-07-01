@@ -195,3 +195,25 @@ body {
   .team-names a:hover {
     color: #f00;
   }
+.cont{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+.box
+{
+    width:40%;
+    background: linear-gradient(to right, #e100ff, #c78ce3);
+    padding:20px 40px;
+    margin-right:10%;
+    border-radius: 20px;
+    margin-bottom:5%;
+    align-items: center;
+    justify-content: center;
+
+}
+.box:hover{
+    background:linear-gradient(to right, #f50384, #d188b7) ;
+}
