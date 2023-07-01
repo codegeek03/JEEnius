@@ -74,11 +74,11 @@
   }
 
   .text {
-    font-size: 15px;
+    font-size: 20px;
     margin-left: 10%;
     margin-right: 10%;
     font-weight: bold;
-    background-image: linear-gradient(to right, #06207e, #6781df);
+    background-image: linear-gradient(to right, #b908e1, #e79ceb);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     width: 600px;
@@ -86,7 +86,7 @@
 
 body {
     font-family: "Ubuntu", sans-serif;
-    background: linear-gradient(to right, #8f8f8f, #ffffff);
+    background: linear-gradient(to right, #000000, #0b0b0b);
 }
 .footer {
     position: fixed;
@@ -105,7 +105,7 @@ body {
     display: inline-block;
     margin-right: 30px;
     color: white;
-    font-size: 18px;
+    font-size: 30px;
     width:50px;
     height:auto;
   }
@@ -139,3 +139,52 @@ body {
         transform: translateY(0);
     }
 }
+
+#team {
+    padding: 50px 0;
+  }
+  .team-member {
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    text-align: center;
+  }
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  .team-member h3 {
+    color: #f1f1f1;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .team-member p {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  /* CSS styles for the team member names */
+  .team-names {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+  }
+  .team-names a {
+    display: block;
+    margin: 0 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+  }
+  .team-names a:hover {
+    color: #f00;
+  }
