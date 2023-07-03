@@ -1,25 +1,9 @@
-function ValidateEmail(input) {
+var button = document.getElementsByClassName("box"); // Assuming there is only one element with the class "box"
+for(i=0;i<button.length;i++)
+{
+  button[i].addEventListener("click", function() {
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSfGJ735SWV2AaTQ0pEqveuvxPjyNbMlL8ZDPXXqEBk4LWI86Q/viewform?usp=sf_link");
+  });
 
-    var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-  
-    if (input.value.match(validRegex)) {
-  
-      alert("Valid email address!");
-  
-      document.form1.text1.focus();
+}
 
-      window.location.href = "home.html";
-  
-      return true;
-  
-    } else {
-  
-      alert("Invalid email address!");
-  
-      document.form1.text1.focus();
-  
-      return false;
-  
-    }
-  
-  }
