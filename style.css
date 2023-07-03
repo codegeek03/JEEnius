@@ -9,15 +9,28 @@
     padding: 0px 15px;
     color: white;
 }
-.nav-link{
+
+.nav-link {
     color: rgb(254, 254, 254);
 }
 
 .nav-link:hover {
     color: rgb(178, 60, 60);
 }
-.navbar-brand{
-    width:100px;
+
+.navbar-brand {
+    width: 100px;
+}
+
+.title {
+    font-size: 400%;
+    margin-left: 45%;
+    font-weight: bolder;
+}
+
+.container {
+    margin-top: 5%;
+    font-size: 20px;
 }
 
 #subscription-overlay {
@@ -35,7 +48,7 @@
 
 .subscription-form {
     width: 30%;
-    height:auto;
+    height: auto;
     margin-top: 20%;
     margin-bottom: 20%;
     padding: 15px 15px;
@@ -62,6 +75,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 .subscription-form input[type="phone"] {
     width: 60%;
     padding: 10px;
@@ -82,13 +96,14 @@
 .subscription-form button:hover {
     background-color: #45a049;
 }
+
 @font-face {
     font-family: 'Ubuntu';
     src: url('path/to/font/Ubuntu-Regular.ttf') format('truetype');
     /* Add more src statements for additional font weights or styles */
-  }
+}
 
-  .text {
+.text {
     font-size: 20px;
     margin-left: 10%;
     margin-right: 10%;
@@ -98,56 +113,65 @@
     -webkit-text-fill-color: transparent;
     width: 600px;
 }
-.navbar-toggler{
+.contact{
     color:white;
-    background-color:white ;
+}
+
+.navbar-toggler {
+    color: white;
+    background-color: white;
 }
 
 body {
     font-family: "Ubuntu", sans-serif;
     background: linear-gradient(to right, #000000, #0b0b0b);
 }
+
 .footer {
     /* position: fixed; */
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 50px; /* Adjust this value according to your footer's height */
-    background-color:black;
+    height: 50px;
+    /* Adjust this value according to your footer's height */
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 40px;
-  }
-  
-  .social-icon {
+}
+
+.social-icon {
     display: inline-block;
     margin-right: 30px;
     color: white;
     font-size: 30px;
-    width:50px;
-    height:auto;
-  }
-  
-  .footer-text {
+    width: 50px;
+    height: auto;
+}
+
+.footer-text {
     margin: 0;
-    color:white;
+    color: white;
     font-size: 14px;
-  }
-  .image-container {
+}
+
+.image-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100px;
 }
-.image{
+
+.image {
     display: flex;
     justify-content: center;
     align-items: center;
-    height:auto;
+    height: auto;
     width: 15%;
-    
+
 }
+
 .moving-image {
     animation: moveUpDown 4s ease-in-out infinite;
 }
@@ -171,42 +195,48 @@ body {
     justify-content: center;
     margin-top: 4%;
     margin-bottom: 4%;
-  }
-  .team-member {
+}
+
+.team-member {
     color: #f1f1f1;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 20px;
     text-align: center;
-  }
-  .team-member img {
+}
+
+.team-member img {
     width: 250px;
     height: 250px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    border:white solid 5px ;
-  }
-  .team-member h3 {
+    border: white solid 5px;
+}
+
+.team-member h3 {
     color: #f1f1f1;
     margin-top: 20px;
     margin-bottom: 10px;
     font-size: 24px;
     font-weight: bold;
-  }
-  .team-member p {
+}
+
+.team-member p {
     margin-bottom: 20px;
     font-size: 16px;
-  }
-  /* CSS styles for the team member names */
-  .team-names {
+}
+
+/* CSS styles for the team member names */
+.team-names {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-    
-  }
-  .team-names a {
+
+}
+
+.team-names a {
     display: block;
     margin: 0 20px;
     font-size: 16px;
@@ -214,11 +244,13 @@ body {
     text-decoration: none;
     color: #333;
     transition: color 0.3s ease-in-out;
-  }
-  .team-names a:hover {
+}
+
+.team-names a:hover {
     color: #f00;
-  }
-.cont{
+}
+
+.cont {
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
@@ -226,43 +258,50 @@ body {
     margin-top: 3%;
     align-content: center;
 }
-.box
-{
-    width:40%;
+
+.box {
+    width: 40%;
     background: linear-gradient(to right, #eb0967d2, #e592f0);
-    padding:20px 30px;
-    margin-right:10%;
+    padding: 20px 30px;
+    margin-right: 10%;
     border-radius: 20px;
-    margin-bottom:5%;
+    margin-bottom: 5%;
     align-items: center;
     justify-content: center;
 
 }
-.box:hover{
-  
-    background:linear-gradient(to right, #ff0000, #f4eff2) ;
-  
+
+.box:hover {
+
+    background: linear-gradient(to right, #ff0000, #f4eff2);
+
 }
-.box1
-{
-    width:40%;
+
+.box1 {
+    width: 40%;
     background: linear-gradient(to right, #04b5fb, #a4d7eb);
-    padding:20px 30px;
-    margin-right:10%;
+    padding: 20px 30px;
+    margin-right: 10%;
     border-radius: 20px;
-    margin-bottom:5%;
-    align-items:center;
-    justify-content:left;
+    margin-bottom: 5%;
+    align-items: center;
+    justify-content: left;
 
 
 }
-.box1:hover{
-    background:linear-gradient(to right, #0e37ed, #87a0eb) ;
+
+.box1:hover {
+    background: linear-gradient(to right, #0e37ed, #87a0eb);
 }
-.hy{
+
+.hy {
     background-image: linear-gradient(to right, #b908e1, #e79ceb);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;margin-left: 34%;font-size:60px; font-weight: bolder; margin-bottom: 4%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 34%;
+    font-size: 60px;
+    font-weight: bolder;
+    margin-bottom: 4%;
 }
 
 /* Styles for screens smaller than 768px */
@@ -272,10 +311,12 @@ body {
         align-items: center;
     }
 
-    .box, .box1 {
+    .box,
+    .box1 {
         width: 80%;
         margin-right: 0;
     }
+
     body {
         font-size: 14px;
     }
@@ -312,18 +353,21 @@ body {
     .footer-text {
         font-size: 12px;
     }
+
     .footer {
         padding: 20px 20px;
         margin-top: 30px;
         height: 150px;
         margin-top: 20px;
     }
+
     .social-icon {
         font-size: 100%;
         margin-right: 100px;
-        
+
     }
-    .hy{
+
+    .hy {
         background-image: linear-gradient(to right, #b908e1, #e79ceb);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -338,9 +382,12 @@ body {
 
 /* Styles for screens smaller than 480px */
 @media screen and (max-width: 480px) {
-    .nav-item, .subscription-form {
+
+    .nav-item,
+    .subscription-form {
         padding: 5px;
     }
+
     .footer {
         padding: 60px 20px;
     }
@@ -389,12 +436,13 @@ body {
         width: 120px;
         height: 120px;
     }
+
     #team {
         padding: 50px 0;
         justify-content: center;
         margin-top: 4%;
         margin-bottom: 24%;
-      }
+    }
 
     .team-member h3 {
         font-size: 20px;
@@ -407,5 +455,5 @@ body {
     .team-names a {
         font-size: 14px;
     }
-   
+
 }
