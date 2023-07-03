@@ -222,7 +222,7 @@ body {
 .box
 {
     width:40%;
-    background:linear-gradient(to right, #f50384, #d188b7) ;
+    background: linear-gradient(to right, #e504c0d2, #e279f0);
     padding:20px 30px;
     margin-right:10%;
     border-radius: 20px;
@@ -232,7 +232,8 @@ body {
 
 }
 .box:hover{
-    background: linear-gradient(to right, #e100ff, #c78ce3);
+  
+    background:linear-gradient(to right, #ff0000, #f4eff2) ;
   
 }
 .box1
