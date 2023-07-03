@@ -1,15 +1,16 @@
 .navc {
-    background: linear-gradient(to right, #a1a2a6, #fdfdfd);
+    background: linear-gradient(to right, #000000, #4c4c4c);
     width: 100%;
-    padding: 10px 30px;
+    padding: 0px 30px;
     opacity: 90%;
- 
-
 }
 
 .nav-item {
     padding: 0px 15px;
     color: white;
+}
+.nav-link{
+    color: rgb(254, 254, 254);
 }
 
 .nav-link:hover {
