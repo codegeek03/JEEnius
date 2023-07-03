@@ -16,6 +16,9 @@
 .nav-link:hover {
     color: rgb(178, 60, 60);
 }
+.navbar-brand{
+    width:100px;
+}
 
 #subscription-overlay {
     position: fixed;
@@ -94,6 +97,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     width: 600px;
+}
+.navbar-toggler{
+    color:white;
+    background-color:white ;
 }
 
 body {
