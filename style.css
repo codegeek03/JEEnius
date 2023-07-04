@@ -4,7 +4,10 @@
     padding: 0px 30px;
     opacity: 90%;
 }
-
+.navbar-brand{
+    color: rgb(254, 254, 254);
+    font-size: 36px;
+}
 .nav-item {
     padding: 0px 15px;
     color: white;
@@ -12,6 +15,7 @@
 
 .nav-link {
     color: rgb(254, 254, 254);
+    font-size: 36px;
 }
 
 .nav-link:hover {
@@ -102,7 +106,12 @@
     src: url('path/to/font/Ubuntu-Regular.ttf') format('truetype');
     /* Add more src statements for additional font weights or styles */
 }
-
+.container-fluid
+{
+    display:flex;
+    align-content: left;
+    justify-content: left;
+}
 .text {
     font-size: 20px;
     margin-left: 10%;
@@ -381,6 +390,9 @@ body {
         margin-bottom: 4%;
         margin-left: 8%;
         font-size: 35px;
+    }
+    .text {
+        font-size: 6px;
     }
 }
 
