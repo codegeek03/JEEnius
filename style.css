@@ -379,6 +379,9 @@ body {
         margin-right: 100px;
 
     }
+    #reg{
+        background-color: #71008a;
+    }
 
     .hy {
         background-image: linear-gradient(to right, #b908e1, #e79ceb);
