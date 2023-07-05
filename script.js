@@ -6,4 +6,8 @@ for(i=0;i<button.length;i++)
   });
 
 }
+var demo=document.getElementById("demo");
+demo.addEventListener("click",function(){
+  window.open("https://forms.gle/YkX1FdXzYyXkEh4F6");
+})
 
