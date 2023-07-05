@@ -10,4 +10,8 @@ var demo=document.getElementById("demo");
 demo.addEventListener("click",function(){
   window.open("https://forms.gle/YkX1FdXzYyXkEh4F6");
 })
+var course=document.getElementById("course");
+course.addEventListener("click",function(){
+  window.open("plan.html");
+})
 
