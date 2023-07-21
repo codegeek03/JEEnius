@@ -210,12 +210,13 @@
                 <td>
                     <h3><strike>₹349</strike></h3>
                     <h2>₹169/month</h2>
-                </td>
+                </td> 
             </tr>
             <tr>
                 <td></td>
-                <td><button id="course">Get &nbsp;&nbsp;Classic</button></td>
-                <td "><button id="course">Get Quantum</button></td>
+                <td><button class="course" id="jac">Get Classic</button>
+                </td>
+                <td "><button class="course" id="jaq">Get Quantum</button></td>
             </tr>
         </table>
     </section> <br>
@@ -269,6 +270,17 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        var jac=document.getElementById("jac");
+jac.addEventListener("click",function(){
+  window.open("https://docs.google.com/forms/d/e/1FAIpQLSdh6JUmQAW7svZNNZ3yl6KJjxRPA7gj57dpy5qAj75eTMoDjg/viewform?usp=pp_url&entry.1880453897=CLASSIC");
+})
+
+var jaq=document.getElementById("jaq");
+jaq.addEventListener("click",function(){
+  window.open("https://docs.google.com/forms/d/e/1FAIpQLSdh6JUmQAW7svZNNZ3yl6KJjxRPA7gj57dpy5qAj75eTMoDjg/viewform");
+})
+    </script>
 </body>
 
 </html>

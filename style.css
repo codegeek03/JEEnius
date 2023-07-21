@@ -140,7 +140,7 @@
     background-color: #680505;
 }
 
-#course {
+.course {
     font-size: 20px;
     padding: 10px 20px;
     background-color: #0066ff;
@@ -151,7 +151,7 @@
     margin-top: 5%;
 }
 
-#course:hover {
+.course:hover {
     background-color: #00078f;
 }
 

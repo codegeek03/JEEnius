@@ -24,3 +24,30 @@ course.addEventListener("click",function(){
   window.open("plan.html");
 })
 
+var jac=document.getElementById("jac");
+jac.addEventListener("click",function(){
+  window.open("https://docs.google.com/forms/d/e/1FAIpQLSdh6JUmQAW7svZNNZ3yl6KJjxRPA7gj57dpy5qAj75eTMoDjg/viewform?usp=pp_url&entry.1880453897=CLASSIC");
+})
+
+var jaq=document.getElementById("jaq");
+jaq.addEventListener("click",function(){
+  window.open("https://docs.google.com/forms/d/e/1FAIpQLSdh6JUmQAW7svZNNZ3yl6KJjxRPA7gj57dpy5qAj75eTMoDjg/viewform");
+})
+
+
+var jac=document.getElementById("jac");
+jac.addEventListener("click",function(){
+  window.open("");
+})
+var jac=document.getElementById("jac");
+jac.addEventListener("click",function(){
+  window.open("");
+})
+var jac=document.getElementById("jac");
+jac.addEventListener("click",function(){
+  window.open("");
+})
+var jac=document.getElementById("jac");
+jac.addEventListener("click",function(){
+  window.open("");
+})

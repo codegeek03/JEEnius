@@ -199,8 +199,9 @@
             </tr>
             <tr>
                 <td></td>
-                <td><button id="course">Get &nbsp;&nbsp;Classic</button></td>
-                <td "><button id="course">Get Quantum</button></td>
+                <td><button class="course" id="jMc">Get Classic</button>
+                </td>
+                <td "><button class="course" id="jMq">Get Quantum</button></td>
             </tr>
         </table>
     </section> <br>
@@ -245,7 +246,17 @@
         </div>
         <p class="footer-text">© 2023 All rights reserved by JEEnius Eduventures.</p>
     </footer>
+    <script>
+        var jMc=document.getElementById("jMc");
+jMc.addEventListener("click",function(){
+  window.open("https://docs.google.com/forms/d/e/1FAIpQLSePMfLqqIc_9diPADM_9eOJfxA_4LpfWWmh9eAu87hY3Nae8Q/viewform?usp=pp_url&entry.1880453897=CLASSIC");
+})
 
+var jMq=document.getElementById("jMq");
+jMq.addEventListener("click",function(){
+  window.open("https://docs.google.com/forms/d/e/1FAIpQLSePMfLqqIc_9diPADM_9eOJfxA_4LpfWWmh9eAu87hY3Nae8Q/viewform?usp=pp_url&entry.1880453897=QUANTUM");
+})
+    </script>
     <script src="script.js"></script>
 </body>
 
