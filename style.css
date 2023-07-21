@@ -436,9 +436,7 @@ body {
     }
 
     .hy {
-        background-image: linear-gradient(to right, #b908e1, #e79ceb);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+       
         margin-left: 24%;
         font-size: 60px;
         font-weight: bolder;
