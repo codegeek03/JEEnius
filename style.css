@@ -135,9 +135,11 @@
     border-radius: 4px;
     cursor: pointer;
 }
-#demo:hover{
+
+#demo:hover {
     background-color: #680505;
 }
+
 #course {
     font-size: 20px;
     padding: 10px 20px;
@@ -148,7 +150,8 @@
     cursor: pointer;
     margin-top: 5%;
 }
-#course:hover{
+
+#course:hover {
     background-color: #00078f;
 }
 
@@ -179,7 +182,7 @@ body {
     /* position: fixed; */
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: 120%;
     height: 50px;
     /* Adjust this value according to your footer's height */
     background-color: black;
@@ -314,7 +317,7 @@ body {
 
 .box {
     width: 40%;
-    background: linear-gradient(to right, #2baed2, #b4e0e8);
+    background: linear-gradient(to right, #a6a9a9, #f4f5f6);
     padding: 20px 30px;
     margin-right: 10%;
     border-radius: 20px;
@@ -348,14 +351,14 @@ body {
 }
 
 .hy {
-    background-image: linear-gradient(to right, #ece3ee, #c1a6c3);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: white;
     margin-left: 34%;
     font-size: 60px;
     font-weight: bolder;
     margin-bottom: 4%;
-    font-family:comic sans ms ;
+    font-family: comic sans ms;
+    justify-content: center;
+
 }
 
 /* Styles for screens smaller than 768px */
@@ -364,6 +367,7 @@ body {
         width: 100%;
         font-size: 15px;
     }
+   
 
     .cont {
         flex-direction: column;
@@ -418,6 +422,7 @@ body {
         margin-top: 30px;
         height: 150px;
         margin-top: 20px;
+        width:100%;
     }
 
     .social-icon {
@@ -445,6 +450,7 @@ body {
     .text {
         font-size: 6px;
     }
+  
 }
 
 /* Styles for screens smaller than 480px */
@@ -526,6 +532,7 @@ body {
     .bx {
         width: 100%;
     }
+    
 }
 
 .ser {
@@ -557,4 +564,17 @@ body {
         width: 100%;
         font-size: 15px;
     }
+}
+
+.divu {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    color: white
+}
+.divus {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    color: white
 }

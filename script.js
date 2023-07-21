@@ -1,8 +1,17 @@
 var button = document.getElementsByClassName("box"); // Assuming there is only one element with the class "box"
-for(i=0;i<button.length;i++)
+for(i=0;i<4;i++)
 {
-  button[i].addEventListener("click", function() {
-    window.open("https://docs.google.com/forms/d/e/1FAIpQLSfGJ735SWV2AaTQ0pEqveuvxPjyNbMlL8ZDPXXqEBk4LWI86Q/viewform?usp=sf_link");
+  button[0].addEventListener("click", function() {
+    window.open("jee-adv.html");
+  });
+  button[1].addEventListener("click", function() {
+    window.open("neet.html");
+  });
+  button[2].addEventListener("click", function() {
+    window.open("jee-mains.html");
+  });
+  button[3].addEventListener("click", function() {
+    window.open("jeef.html");
   });
 
 }
